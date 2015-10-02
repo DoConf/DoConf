@@ -1,0 +1,27 @@
+{
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "DoConf Screensharing",
+   "permissions": [ "desktopCapture" ],
+   "short_name": "Screen sharing for DoConf",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.1",
+
+   "background": {
+      "persistent": true,
+      "scripts": [ "script.js" ]
+   },
+   "description": "Extension to allow screen sharing in DoConf applications.",
+   "externally_connectable": {
+      "matches": [ "*://*.dit.upm.es/*"]
+   },
+   "icons": {
+      "128": "doconf_icon_128.png",
+      "16": "doconf_icon_16.png",
+      "48": "doconf_icon_48.png"
+   },
+   "browser_action":{
+     "default_icon": "doconf_icon_16.png"
+   }
+}
+
